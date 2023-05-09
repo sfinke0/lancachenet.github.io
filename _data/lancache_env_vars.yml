@@ -36,6 +36,10 @@ monolithic:
     default: 3560d
 
 monolithic-advanced:
+  - name: NGINX_LOG_FORMAT
+    description: >-
+      The log format NGINX emits. Can be set to <code>cachelog-json</code> to force NGINX to emit JSON logs. This helps parsing logs without complicated Grok or Regex patterns.
+    default: cachelog
   - name: NGINX_WORKER_PROCESSES
     description: >-
     default: auto
